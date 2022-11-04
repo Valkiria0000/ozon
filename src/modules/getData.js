@@ -1,6 +1,6 @@
 const getData = () => {
   return fetch(
-    `https://ozon-ef789-default-rtdb.firebaseio.com/goods.json`
+    `https://myozon-14071-default-rtdb.firebaseio.com/goods.json`
   ).then((response) => {
     console.log(response);
     return response.json();
