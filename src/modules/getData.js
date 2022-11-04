@@ -1,12 +1,10 @@
-const getData = (str) => {
-return fetch(
-   `https://ozonproject-5f2da-default-rtdb.firebaseio.com/goods.json?${str ? `search=${str}` : ''}`
-   )
-   .then((response) => {
-      return response.json()
-   
-})
+const getData = () => {
+  return fetch(
+    `https://ozon-ef789-default-rtdb.firebaseio.com/goods.json`
+  ).then((response) => {
+    console.log(response);
+    return response.json();
+  });
+};
 
-}
-
-export default getData
+export default getData;
